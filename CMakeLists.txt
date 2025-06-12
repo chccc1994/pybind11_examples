@@ -20,32 +20,7 @@ endif()
 # ---------------------- 项目配置 ----------------------
 
 # -------------- Python  ------------------#
-# add_definitions(-DPYTHON_HOME="D:/Program/Anaconda/envs/py39")
-# add_definitions(-DPYTHON_PATH="D:/Program/Anaconda/envs/py39")
-# set(Python3_ROOT_DIR "D:/Program/Anaconda/envs/py39")
-# set(Python3_INCLUDE_DIRS ${Python3_ROOT_DIR}/include)
-# set(Pybind_INCLUDE_DIRS ${Pybind_DIR}/include)
-# include_directories(
-#   ${Python3_INCLUDE_DIRS}
-#   ${Pybind_INCLUDE_DIRS}
-# )
-# set(Python3_EXECUTABLE "D:/Program/Anaconda/envs/py39/python.exe")
-
-# if(CMAKE_BUILD_TYPE MATCHES "Debug")
-#     set(Python3_LIBRARY "D:/Program/Anaconda/envs/py39/libs/python39_d.lib")
-#     set(Python3_LIBRARIES ${Python3_LIBRARY})
-#     set(Python3_LIBRARY_DEBUG ${Python3_LIBRARY})
-#     set(Python3_LIBRARY_RELEASE "")
-# else()
-#     set(Python3_LIBRARY "D:/Program/Anaconda/envs/py39/libs/python39.lib")
-#     set(Python3_LIBRARIES ${Python3_LIBRARY})
-#     set(Python3_LIBRARY_DEBUG "")
-#     set(Python3_LIBRARY_RELEASE ${Python3_LIBRARY})
-# endif()
-
-# set(SCRIPTS_SOURCE_DIR "${CMAKE_SOURCE_DIR}/scripts")
-
-# 添加子模块
+# 添加pybind11子模块
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/third_party/pybind11)
 
 # ========================== YAML-CPP ==========================
